@@ -8,20 +8,23 @@ namespace Tatelier.Interface
 {
 	public abstract class Engine
 	{
+        #region シングルトン関連
+        static Engine singleton;
+
+		public static Engine Singleton => singleton;
 
 		public static void Start(Engine engine)
 		{
 			singleton = engine;
 		}
+        #endregion
 
-		static Engine singleton;
+        public abstract IInput Input { get; }
 
-		public static Engine Singleton => singleton;
+		public abstract ILogWindow LogWindow { get; }
 
 		public abstract INowTime NowTime { get; }
 
 		public abstract IScreenSize ScreenSize { get; }
-
-		public abstract ILogWindow LogWindow { get; }
 	}
 }
