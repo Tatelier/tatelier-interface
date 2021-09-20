@@ -60,12 +60,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\ResultType.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="IInput.cs" />
     <Compile Include="ILogWindow.cs" />
     <Compile Include="INowTime.cs" />
+    <Compile Include="ISceneControl.cs" />
     <Compile Include="IScreenSize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IDebugWindow.cs" />
+    <Compile Include="Scene\IScene.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

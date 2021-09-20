@@ -26,5 +26,7 @@ namespace Tatelier.Interface
 		public abstract INowTime NowTime { get; }
 
 		public abstract IScreenSize ScreenSize { get; }
+
+		public abstract Scene.ISceneControl SceneControl { get; }
 	}
 }
